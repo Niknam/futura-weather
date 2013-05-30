@@ -1,5 +1,10 @@
+Futura Weather
+==============
+
 Modification of 'Roboto Weather' by ZoneMR.
 http://www.mypebblefaces.com/view?fID=3408&aName=ZoneMR&pageTitle=Roboto+%2B+Weather&auID=3601
+
+![](https://dl.dropboxusercontent.com/u/572608/futura-weather.jpg)
 
 <b>Features from 'Roboto + Weather':</b>
 - Location-based weather notifications
