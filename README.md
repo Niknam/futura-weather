@@ -1,6 +1,7 @@
 Modification of 'Roboto Weather' by ZoneMR.
+http://www.mypebblefaces.com/view?fID=3408&aName=ZoneMR&pageTitle=Roboto+%2B+Weather&auID=3601
 
-Features from 'Roboto + Weather':
+**Features from 'Roboto + Weather':
 - Location-based weather notifications
 - Notifications update every 15 minutes
 - Alerts you if connection is lost with phone (icon + vibration)
