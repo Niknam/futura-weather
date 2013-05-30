@@ -1,0 +1,92 @@
+{
+    "media": [
+        {
+            "defName": "FUTURA_CONDENSED_53",
+            "type": "font",
+            "file": "fonts/futura_condensed_bold-webfont.ttf"
+        },
+        {
+            "defName": "IMAGE_MENU_ICON",
+            "type": "png",
+            "file": "images/menu_icon_roboto.png"
+        },
+        {
+            "defName": "ICON_CLEAR_DAY",
+            "type": "png",
+            "file": "images/clear-day.png"
+        },
+        {
+            "defName": "ICON_CLEAR_NIGHT",
+            "type": "png",
+            "file": "images/clear-night.png"
+        },
+        {
+            "defName": "ICON_RAIN",
+            "type": "png",
+            "file": "images/rain.png"
+        },
+        {
+            "defName": "ICON_SNOW",
+            "type": "png",
+            "file": "images/snow.png"
+        },
+        {
+            "defName": "ICON_SLEET",
+            "type": "png",
+            "file": "images/sleet.png"
+        },
+        {
+            "defName": "ICON_FOG",
+            "type": "png",
+            "file": "images/fog.png"
+        },
+        {
+            "defName": "ICON_CLOUDY",
+            "type": "png",
+            "file": "images/cloudy.png"
+        },
+        {
+            "defName": "ICON_PARTLY_CLOUDY_DAY",
+            "type": "png",
+            "file": "images/partly-cloudy-day.png"
+        },
+        {
+            "defName": "ICON_PARTLY_CLOUDY_NIGHT",
+            "type": "png",
+            "file": "images/partly-cloudy-night.png"
+        },
+        {
+            "defName": "ICON_ERROR",
+            "type": "png",
+            "file": "images/error.png"
+        },
+        {
+            "defName": "ICON_WIND",
+            "type": "png",
+            "file": "images/wind.png"
+        },
+        {
+            "trackingAdjust": 3,
+            "characterRegex": "[0-9adeFhiMnorSTtuW ]",
+            "defName": "FUTURA_18",
+            "type": "font",
+            "file": "fonts/futura.ttf"
+        },
+        {
+            "trackingAdjust": -4,
+            "characterRegex": "[0-9:\u00b0 -]",
+            "defName": "FUTURA_40",
+            "type": "font",
+            "file": "fonts/futura.ttf"
+        },
+        {
+            "trackingAdjust": -4,
+            "characterRegex": "[:]",
+            "defName": "FUTURA_45",
+            "type": "font",
+            "file": "fonts/futura.ttf"
+        }
+    ],
+    "friendlyVersion": "VERSION",
+    "versionDefName": "APP_RESOURCES"
+}
