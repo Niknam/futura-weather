@@ -6,19 +6,22 @@ http://www.mypebblefaces.com/view?fID=3408&aName=ZoneMR&pageTitle=Roboto+%2B+Wea
 - Notifications update every 15 minutes
 - Alerts you if connection is lost with phone (icon + vibration)
 
-What's changed:
+<b>What's changed:</b>
 - Font is changed from 'Roboto' to 'Futura' to give a cleaner and more uniform interface
 - Weather notifications are divided from time and date with a white background (à la 'Weather Watch' by Katharine)
 - Month removed from date
 - Alert vibration pattern slightly modified
 
+Installation notes
+------------------
+
 For the weather notifications to work you need to have the 'httpebble' app installed on your phone. 
 
-Android users:
+<b>Android users:</b>
 - Download and install 'httpebble' from Google Play:
 https://play.google.com/store/apps/details?id=com.lukekorth.httpebble
 
-iOS users:
+<b>iOS users:</b>
 - Open http://macbuildserver.com/try/ on your phone
 - Paste the following link in the "GitHub repo" field: https://github.com/Katharine/httpebble-ios
 - Click 'Next' until the build is done
