@@ -13,7 +13,7 @@
 
 PBL_APP_INFO(MY_UUID,
              "Futura Weather", "Martin Rosinski, Mod by Niknam",
-             1, 61, /* App version */
+             1, 7, /* App version */
              RESOURCE_ID_IMAGE_MENU_ICON,
              APP_INFO_WATCH_FACE);
 
@@ -36,9 +36,9 @@ Window window;          /* main window */
 TextLayer date_layer;   /* layer for the date */
 TimeLayer time_layer;   /* layer for the time */
 
-GFont font_date;        /* font for date (normal) */
-GFont font_hour;        /* font for hour (bold) */
-GFont font_minute;      /* font for minute (thin) */
+GFont font_date;        /* font for date */
+GFont font_hour;        /* font for hour */
+GFont font_minute;      /* font for minute */
 
 //Weather Stuff
 static int our_latitude, our_longitude;
@@ -108,11 +108,19 @@ void handle_minute_tick(AppContextRef ctx, PebbleTickEvent *t)
     (void)ctx;  /* prevent "unused parameter" warning */
 
     if (t->units_changed & DAY_UNIT)
-    {
-        string_format_time(date_text,
+    {		
+	    string_format_time(date_text,
                            sizeof(date_text),
                            "%a %d",
                            t->tick_time);
+
+		if (date_text[4] == '0') /* is day of month < 10? */
+		{
+		    /* This is a hack to get rid of the leading zero of the
+			   day of month
+            */
+            memmove(&date_text[4], &date_text[5], sizeof(date_text) - 1);
+		}
         text_layer_set_text(&date_layer, date_text);
     }
 
@@ -121,7 +129,7 @@ void handle_minute_tick(AppContextRef ctx, PebbleTickEvent *t)
         string_format_time(hour_text, sizeof(hour_text), "%H", t->tick_time);
 		if (hour_text[0] == '0')
         {
-            /* This is a hack to get rid of the leading zero.
+            /* This is a hack to get rid of the leading zero of the hour.
             */
             memmove(&hour_text[0], &hour_text[1], sizeof(hour_text) - 1);
         }
@@ -131,7 +139,7 @@ void handle_minute_tick(AppContextRef ctx, PebbleTickEvent *t)
         string_format_time(hour_text, sizeof(hour_text), "%I", t->tick_time);
         if (hour_text[0] == '0')
         {
-            /* This is a hack to get rid of the leading zero.
+            /* This is a hack to get rid of the leading zero of the hour.
             */
             memmove(&hour_text[0], &hour_text[1], sizeof(hour_text) - 1);
         }
