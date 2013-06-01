@@ -17,6 +17,10 @@ http://www.mypebblefaces.com/view?fID=3408&aName=ZoneMR&pageTitle=Roboto+%2B+Wea
 - Month removed from date
 - Alert vibration pattern slightly modified
 
+<b>News in version 1.7:</b>
+- Initial '0' removed from day of month
+- Internet connection issues not considered as phone connection loss, i.e. no vibration alert (fix by ZoneMR)
+
 Installation notes
 ------------------
 
