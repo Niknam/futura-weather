@@ -12,8 +12,8 @@
 #define MY_UUID { 0x91, 0x41, 0xB6, 0x28, 0xBC, 0x89, 0x49, 0x8E, 0xB1, 0x47, 0x04, 0x9F, 0x49, 0xC0, 0x99, 0xAD }
 
 PBL_APP_INFO(MY_UUID,
-             "Futura Weather", "Martin Rosinski, Mod by Niknam",
-             1, 7, /* App version */
+             "Futura Weather", "Niknam Moslehi", // Modification of "Roboto Weather" by Martin Rosinski
+             1, 71, /* App version */
              RESOURCE_ID_IMAGE_MENU_ICON,
              APP_INFO_WATCH_FACE);
 
@@ -256,7 +256,7 @@ void request_weather() {
 	}
 	// Build the HTTP request
 	DictionaryIterator *body;
-	HTTPResult result = http_out_get("http://www.zone-mr.net/api/weather.php", WEATHER_HTTP_COOKIE, &body);
+	HTTPResult result = http_out_get("https://ofkorth.net/pebble/weather.php", WEATHER_HTTP_COOKIE, &body);
 	if(result != HTTP_OK) {
 		weather_layer_set_icon(&weather_layer, WEATHER_ICON_NO_WEATHER);
 		return;
