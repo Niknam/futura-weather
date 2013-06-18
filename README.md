@@ -17,6 +17,9 @@ http://www.mypebblefaces.com/view?fID=3408&aName=ZoneMR&pageTitle=Roboto+%2B+Wea
 - Month removed from date
 - Alert vibration pattern slightly modified
 
+<b>Version 1.72 (June 18, 2013)</b>
+- 3-character temperature support (above 100° and below -10°)
+
 <b>Version 1.71 (June 17, 2013)</b>
 - Moved weather script to another location, provided by Luke Korth
 
@@ -34,10 +37,6 @@ For the weather notifications to work you need to have the 'httpebble' app insta
 https://play.google.com/store/apps/details?id=com.lukekorth.httpebble
 
 <b>iOS users:</b>
-- Open http://macbuildserver.com/try/ on your phone
-- Paste the following link in the "GitHub repo" field: https://github.com/Katharine/httpebble-ios
-- Click 'Next' until the build is done
-- Install the app on your iPhone and run it
-- The app connects to your Pebble and is able to send weather notifications to this watchface
-
-See this forum post for more info: http://forums.getpebble.com/discussion/5535/how-to-compile-an-ios-ipa-via-the-cloud/p1
+- Open this link on your device (thank you orviwan): http://www.mirz.com/httpebble
+- Tap "Install httpebble"
+(PLEASE NOTE that this is a temporary solution until there is an easier way of installing 'httpebble' on an iOS device. The provider of this link is not affiliated with the maker of 'httpebble'. 'httpebble' is the work of Katharine Berry, and its' source code can be found here: https://github.com/Katharine/httpebble-ios)
