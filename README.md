@@ -38,5 +38,5 @@ https://play.google.com/store/apps/details?id=com.lukekorth.httpebble
 
 <b>iOS users:</b>
 - Open this link on your device (thank you orviwan): http://www.mirz.com/httpebble
-- Tap "Install httpebble"
-(<b><u>PLEASE NOTE</u></b> that this is a temporary solution until there is an easier way of installing 'httpebble' on an iOS device. The provider of this link is not affiliated with the maker of 'httpebble'. 'httpebble' is the work of Katharine Berry, and its' source code can be found here: https://github.com/Katharine/httpebble-ios)
+- Tap "Install httpebble"<br/>
+(<b>PLEASE NOTE</b> that this is a temporary solution until there is an easier way of installing 'httpebble' on an iOS device. The provider of this link is not affiliated with the maker of 'httpebble'. 'httpebble' is the work of Katharine Berry, and its' source code can be found here: https://github.com/Katharine/httpebble-ios)
