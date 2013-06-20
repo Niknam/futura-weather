@@ -33,7 +33,7 @@ Installation notes
 For the weather notifications to work you need to have a 'httpebble' app installed on your phone. 
 
 <b>Android users:</b>
-- Download and install 'httpebble' from Google Play:
+- Download and install 'Pebble Connect' from Google Play:
 https://play.google.com/store/apps/details?id=com.lukekorth.httpebble
 
 <b>iOS users:</b>
