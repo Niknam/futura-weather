@@ -30,13 +30,12 @@ http://www.mypebblefaces.com/view?fID=3408&aName=ZoneMR&pageTitle=Roboto+%2B+Wea
 Installation notes
 ------------------
 
-For the weather notifications to work you need to have the 'httpebble' app installed on your phone. 
+For the weather notifications to work you need to have a 'httpebble' app installed on your phone. 
 
 <b>Android users:</b>
 - Download and install 'httpebble' from Google Play:
 https://play.google.com/store/apps/details?id=com.lukekorth.httpebble
 
 <b>iOS users:</b>
-- Open this link on your device (thank you orviwan): http://www.mirz.com/httpebble
-- Tap "Install httpebble"<br/>
-(<b>PLEASE NOTE</b> that this is a temporary solution until there is an easier way of installing 'httpebble' on an iOS device. The provider of this link is not affiliated with the maker of 'httpebble'. 'httpebble' is the work of Katharine Berry, and its' source code can be found here: https://github.com/Katharine/httpebble-ios)
+- Download and install 'httpebble' from the App Store:
+https://itunes.apple.com/app/httpebble/id650174711?l=en&mt=8
