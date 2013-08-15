@@ -12,8 +12,8 @@
 #define MY_UUID { 0x91, 0x41, 0xB6, 0x28, 0xBC, 0x89, 0x49, 0x8E, 0xB1, 0x47, 0x04, 0x9F, 0x49, 0xC0, 0x99, 0xAD }
 
 PBL_APP_INFO(MY_UUID,
-             "Futura Weather", "Niknam Moslehi", // Modification of "Roboto Weather" by Martin Rosinski
-             1, 71, /* App version */
+			"Futura Weather", "Niknam Moslehi", // Modification of "Roboto Weather" by Martin Rosinski
+             1, 73, /* App version */
              RESOURCE_ID_IMAGE_MENU_ICON,
              APP_INFO_WATCH_FACE);
 
@@ -40,9 +40,13 @@ GFont font_date;        /* font for date */
 GFont font_hour;        /* font for hour */
 GFont font_minute;      /* font for minute */
 
+static int initial_minute;
+
 //Weather Stuff
 static int our_latitude, our_longitude;
 static bool located = false;
+static bool initial_request = true;
+static bool has_temperature = false;
 
 WeatherLayer weather_layer;
 
@@ -74,6 +78,7 @@ void success(int32_t cookie, int http_status, DictionaryIterator* received, void
 	Tuple* temperature_tuple = dict_find(received, WEATHER_KEY_TEMPERATURE);
 	if(temperature_tuple) {
 		weather_layer_set_temperature(&weather_layer, temperature_tuple->value->int16);
+		has_temperature = true;
 	}
 	
 	link_monitor_handle_success();
@@ -148,18 +153,18 @@ void handle_minute_tick(AppContextRef ctx, PebbleTickEvent *t)
     string_format_time(minute_text, sizeof(minute_text), ":%M", t->tick_time);
     time_layer_set_text(&time_layer, hour_text, minute_text);
 	
-	if(!located || !(t->tick_time->tm_min % 15))
+	if(initial_request || !has_temperature || (t->tick_time->tm_min % 30) == initial_minute)
 	{
-		//Every 15 minutes, request updated weather
+		// Every 30 minutes, request updated weather
 		http_location_request();
+		initial_request = false;
 	}
 	else
 	{
-		//Every minute, ping the phone
+		// Ping the phone every minute
 		link_monitor_ping();
 	}
 }
-
 
 /* Initialize the application.
 */
@@ -200,7 +205,7 @@ void handle_init(AppContextRef ctx)
     layer_add_child(&window.layer, &date_layer.layer);
 
 	// Add weather layer
-	weather_layer_init(&weather_layer, GPoint(0, 90)); //0, 100
+	weather_layer_init(&weather_layer, GPoint(0, 90));
 	layer_add_child(&window.layer, &weather_layer.layer);
 	
 	http_register_callbacks((HTTPCallbacks){.failure=failed,.success=success,.reconnect=reconnect,.location=location}, (void*)ctx);
@@ -209,6 +214,8 @@ void handle_init(AppContextRef ctx)
 	get_time(&tm);
     t.tick_time = &tm;
     t.units_changed = SECOND_UNIT | MINUTE_UNIT | HOUR_UNIT | DAY_UNIT;
+	
+	initial_minute = (tm.tm_min % 30);
 	
 	handle_minute_tick(ctx, &t);
 }

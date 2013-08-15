@@ -6,16 +6,14 @@ http://www.mypebblefaces.com/view?fID=3408&aName=ZoneMR&pageTitle=Roboto+%2B+Wea
 
 ![](https://dl.dropboxusercontent.com/u/572608/futura-weather.jpg)
 
-<b>Features from 'Roboto + Weather':</b>
+<b>Features:</b>
 - Location-based weather notifications
-- Notifications update every 15 minutes
+- Weather updates every 30 minutes
 - Alerts you if connection is lost with phone (icon + vibration)
 
-<b>What's changed:</b>
-- Font is changed from 'Roboto' to 'Futura' to give a cleaner and more uniform interface
-- Weather notifications are divided from time and date with a white background (à la 'Weather Watch' by Katharine)
-- Month removed from date
-- Alert vibration pattern slightly modified
+<b>Version 1.73 (August 14, 2013)</b>
+- Update interval changed from 15 to 30 min to lower the monthly cost of weather requests
+- Fix to reduce the amount of simultaneous weather requests
 
 <b>Version 1.72 (June 18, 2013)</b>
 - 3-character temperature support (above 100° and below -10°)
