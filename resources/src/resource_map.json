@@ -81,8 +81,8 @@
         },
         {
             "trackingAdjust": -4,
-            "characterRegex": "[:]",
-            "defName": "FUTURA_45",
+            "characterRegex": "[0-9:\u00b0 -]",
+            "defName": "FUTURA_35",
             "type": "font",
             "file": "fonts/futura.ttf"
         }

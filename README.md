@@ -19,7 +19,7 @@ http://www.mypebblefaces.com/view?fID=3408&aName=ZoneMR&pageTitle=Roboto+%2B+Wea
 - 3-character temperature support (above 100° and below -10°)
 
 <b>Version 1.71 (June 17, 2013)</b>
-- Moved weather script to another location, provided by Luke Korth
+- New endpoint location, provided by Luke Korth
 
 <b>Version 1.7 (June 1, 2013)</b>
 - Initial '0' removed from day of month
@@ -28,7 +28,7 @@ http://www.mypebblefaces.com/view?fID=3408&aName=ZoneMR&pageTitle=Roboto+%2B+Wea
 Installation notes
 ------------------
 
-For the weather notifications to work you need to have a 'httpebble' app installed on your phone. 
+For the weather notifications to work you need to have an 'httpebble' app installed on your phone. 
 
 <b>Android users:</b>
 - Download and install 'Pebble Connect' from Google Play:
