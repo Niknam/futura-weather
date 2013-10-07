@@ -33,6 +33,11 @@ void link_monitor_handle_failure(int error)
 		case HTTP_INVALID_BRIDGE_RESPONSE + 1000:
 			//The phone may have no internet connection, but the link should be fine
 			return;
+		
+		case HTTP_SEND_TIMEOUT + 1000:
+			//The watch might experience a slow response, e.g. when sending a weather request,
+			//but most often the link is fine
+			return;
 	
 #ifdef DEBUG
 		default:
@@ -43,7 +48,7 @@ void link_monitor_handle_failure(int error)
 	
 	if(__linkStatus == LinkStatusOK)
 	{
-		//The link has just failed, notify the user
+		// The link has just failed, notify the user
 		// Vibe pattern: ON, OFF, ON, ...
 		static const uint32_t const segments[] = { 150, 100, 150, 100, 300 };
 		VibePattern pat = {

@@ -1,14 +1,79 @@
 {
     "media": [
         {
-            "defName": "FUTURA_CONDENSED_53",
-            "type": "font",
-            "file": "fonts/futura_condensed_bold-webfont.ttf"
+            "defName": "ICON_DRIZZLE",
+            "type": "png",
+            "file": "images/drizzle.png"
+        },
+        {
+            "defName": "ICON_LOADING3",
+            "type": "png",
+            "file": "images/loading3.png"
+        },
+        {
+            "defName": "ICON_LOADING2",
+            "type": "png",
+            "file": "images/loading2.png"
+        },
+        {
+            "defName": "ICON_LOADING1",
+            "type": "png",
+            "file": "images/loading1.png"
+        },
+        {
+            "defName": "ICON_NOT_AVAILABLE",
+            "type": "png",
+            "file": "images/not-available.png"
+        },
+        {
+            "defName": "ICON_HOT",
+            "type": "png",
+            "file": "images/hot.png"
+        },
+        {
+            "defName": "ICON_COLD",
+            "type": "png",
+            "file": "images/cold.png"
+        },
+        {
+            "defName": "ICON_RAIN_SLEET",
+            "type": "png",
+            "file": "images/rain-sleet.png"
+        },
+        {
+            "defName": "ICON_RAIN_SNOW",
+            "type": "png",
+            "file": "images/rain-snow.png"
+        },
+        {
+            "defName": "ICON_THUNDER",
+            "type": "png",
+            "file": "images/thunder.png"
+        },
+        {
+            "defName": "ICON_SNOW_SLEET",
+            "type": "png",
+            "file": "images/snow-sleet.png"
+        },
+        {
+            "defName": "ICON_PHONE_ERROR",
+            "type": "png",
+            "file": "images/phone_error.png"
         },
         {
             "defName": "IMAGE_MENU_ICON",
             "type": "png",
-            "file": "images/menu_icon_roboto.png"
+            "file": "images/menu_icon_futura.png"
+        },
+        {
+            "defName": "ICON_CLOUD_ERROR",
+            "type": "png",
+            "file": "images/cloud-error.png"
+        },
+        {
+            "defName": "FUTURA_CONDENSED_53",
+            "type": "font",
+            "file": "fonts/futura_condensed_bold-webfont.ttf"
         },
         {
             "defName": "ICON_CLEAR_DAY",
@@ -56,33 +121,28 @@
             "file": "images/partly-cloudy-night.png"
         },
         {
-            "defName": "ICON_ERROR",
-            "type": "png",
-            "file": "images/error.png"
-        },
-        {
             "defName": "ICON_WIND",
             "type": "png",
             "file": "images/wind.png"
         },
         {
-            "trackingAdjust": 3,
-            "characterRegex": "[0-9adeFhiMnorSTtuW ]",
-            "defName": "FUTURA_18",
+            "trackingAdjust": -4,
+            "characterRegex": "[0-9\u00b0 -]",
+            "defName": "FUTURA_35",
             "type": "font",
             "file": "fonts/futura.ttf"
         },
         {
             "trackingAdjust": -4,
-            "characterRegex": "[0-9:\u00b0 -]",
+            "characterRegex": "[0-9\u00b0 -]",
             "defName": "FUTURA_40",
             "type": "font",
             "file": "fonts/futura.ttf"
         },
         {
-            "trackingAdjust": -4,
-            "characterRegex": "[0-9:\u00b0 -]",
-            "defName": "FUTURA_35",
+            "trackingAdjust": 3,
+            "characterRegex": "[0-9adeFhiMnorSTtuW ]",
+            "defName": "FUTURA_18",
             "type": "font",
             "file": "fonts/futura.ttf"
         }
