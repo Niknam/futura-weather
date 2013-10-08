@@ -6,7 +6,7 @@ http://www.mypebblefaces.com/apps/3601/3408/
 
 ![](https://dl.dropboxusercontent.com/u/572608/futura-weather-v2/futura_weather-v2.jpg)
 
-Download here:
+**Download here:**
 
 [Celsius](http://www.mypebblefaces.com/download_app?cID=2905&fID=3735&version=2&uID=3263) [[QR]](http://www.mypebblefaces.com/QR/temp/pebble711ab886558fe228fc3ccdf035abfdd7.png)
 
