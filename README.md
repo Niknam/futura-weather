@@ -54,7 +54,7 @@ The watch will try to reconnect during the subsequent 3 hours following the init
 ### Phone/httpebble app disconnections
 ![](https://dl.dropboxusercontent.com/u/572608/futura-weather-v2/futura-weather-phone-disconnection.png)
 
-The watch regularly pings the phone to check whether it is still connected or not. Upon noticing that the phone is disconnected from the watch, the phone disconnection icon above will be displayed. 30 minutes after the disconnection, the temperature field will blanked out. The same feedback will be displayed if the httpebble app is disconnected from the watch, or if loading the watch face while being disconnected from the phone or the httpebble app.
+The watch regularly pings the phone to check whether it is still connected or not. Upon noticing that the phone is disconnected from the watch, the phone disconnection icon above will be displayed. 30 minutes after the disconnection, the temperature field will be blanked out. The same feedback will be displayed if the httpebble app is disconnected from the watch, or if loading the watch face while being disconnected from the phone or the httpebble app.
 
 As when noticing HTTP errors, the watch will try to reconnect during the subsequent 3 hours following phone disconnections. Likewise, it will become passive thereafter and the watch face has to be manually reloaded in order to be able to check for connected phones again.
 
