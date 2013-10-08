@@ -6,6 +6,14 @@ http://www.mypebblefaces.com/apps/3601/3408/
 
 ![](https://dl.dropboxusercontent.com/u/572608/futura-weather-v2/futura_weather-v2.jpg)
 
+Download here:
+[Celsius](http://www.mypebblefaces.com/download_app?cID=2905&fID=3735&version=2&uID=3263) [[QR]](http://www.mypebblefaces.com/QR/temp/pebble711ab886558fe228fc3ccdf035abfdd7.png)
+[Celsius (no vibration alert)](http://www.mypebblefaces.com/download_app?cID=3822&fID=3777&version=2&uID=3263) [[QR]](http://www.mypebblefaces.com/QR/temp/pebble7bc9d76276085491cae3f671c95a582d.png)
+[Celsius (no phone link monitor)](http://www.mypebblefaces.com/download_app?cID=5759&fID=6608&version=2&uID=3263) [[QR]](http://www.mypebblefaces.com/QR/temp/pebble696384727ee254ddeea08b609335bbde.png)
+[Fahrenheit](http://www.mypebblefaces.com/download_app?cID=5760&fID=6609&version=2&uID=3263) [[QR]](http://www.mypebblefaces.com/QR/temp/pebbled5b6df371fc71ce5cae91741716deb23.png)
+[Fahrenheit (no vibration alert)](http://www.mypebblefaces.com/download_app?cID=5761&fID=6610&version=2&uID=3263) [[QR]](http://www.mypebblefaces.com/QR/temp/pebble4933fe7a41ca893b6572ea70f8230450.png)
+[Fahrenheit (no phone link monitor)](http://www.mypebblefaces.com/download_app?cID=5762&fID=6611&version=2&uID=3263) [[QR]](http://www.mypebblefaces.com/QR/temp/pebble7a6129f628e47686b60b80149f3f0610.png)
+
 Features
 --------
 
@@ -96,13 +104,13 @@ _**Nerd summary:** Compile your own version of this GitHub project. Localization
 Version History
 ---------------
 
-#### 2.0 (October 7, 2013)
+#### 2.0 (October 8, 2013)
 - New weather icons, courtesy of Onlyoly (http://drbl.in/hozN)
 - New weather information provider: Yahoo! Weather (thanks to Luke Korth and orviwan for the great assistance!)
-- More accurate error handling and feedback: Now differentiates between HTTP errors and phone disconnections, and also indicates stale weather by removing degree symbol (see "Error/Loading Feedback")
+- More accurate error handling and feedback: Now differentiates between HTTP errors and phone disconnections, and also indicates stale weather by removing degree symbol (see "[Error Feedback](https://github.com/Niknam/futura-weather#error-feedback)")
 - Loading animation will be displayed if no weather information is displayed within 4 seconds of loading the watch face
 - Update interval changed back to 15 minutes
-- Added possibility to localize weekdays into another language (Manual compilation needed. See "Localization Notes" for further instructions.)
+- Added possibility to localize weekdays into another language (Manual compilation needed. See "[Localization Notes](https://github.com/Niknam/futura-weather#localization-notes)" for further instructions.)
 
 #### 1.73 (August 14, 2013)
 - Update interval changed from 15 to 30 minutes to lower the monthly cost of weather requests
@@ -114,6 +122,6 @@ Version History
 #### 1.71 (June 17, 2013)
 - New endpoint location, provided by Luke Korth
 
-### 1.7 (June 1, 2013)
+#### 1.7 (June 1, 2013)
 - Initial '0' removed from day of month
 - Internet connection issues not considered as phone connection loss, i.e. no vibration alert (fix by ZoneMR)
