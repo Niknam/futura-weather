@@ -20,6 +20,7 @@ Modification of "Roboto Weather" by Martin Rosinski. http://www.mypebblefaces.co
 [Fahrenheit (no phone link monitor)](http://www.mypebblefaces.com/download_app?cID=5762&fID=6611&version=2&uID=3263) [[QR] **](http://www.mypebblefaces.com/QR/temp/pebble7a6129f628e47686b60b80149f3f0610.png)
 
 _* Does not vibrate upon phone disconnections, and pings the phone less frequently._
+
 _** Does not monitor the link between watch and phone (i.e. does not ping the phone at all)._
 
 Features
