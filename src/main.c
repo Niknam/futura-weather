@@ -222,6 +222,7 @@ void handle_tick(AppContextRef ctx, PebbleTickEvent *t)
 			
 			// Primitive hack to translate the day of week to another language
 			// Needs to be exactly 3 characters, e.g. "Mon" or "Mo "
+			// Supported characters: A-Z, a-z, 0-9
 			
 			if (date_text[0] == 'M')
 			{

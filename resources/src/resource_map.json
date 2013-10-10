@@ -126,9 +126,9 @@
             "file": "images/wind.png"
         },
         {
-            "trackingAdjust": -4,
-            "characterRegex": "[0-9\u00b0 -]",
-            "defName": "FUTURA_35",
+            "trackingAdjust": 3,
+            "characterRegex": "[A-Za-z0-9 ]",
+            "defName": "FUTURA_18",
             "type": "font",
             "file": "fonts/futura.ttf"
         },
@@ -140,9 +140,9 @@
             "file": "fonts/futura.ttf"
         },
         {
-            "trackingAdjust": 3,
-            "characterRegex": "[0-9adeFhiMnorSTtuW ]",
-            "defName": "FUTURA_18",
+            "trackingAdjust": -4,
+            "characterRegex": "[0-9\u00b0 -]",
+            "defName": "FUTURA_35",
             "type": "font",
             "file": "fonts/futura.ttf"
         }

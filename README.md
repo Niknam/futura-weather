@@ -85,7 +85,7 @@ Localization Notes
 
 Follow these steps to translate the displayed weekdays into another language.
 
-_**Nerd summary:** Compile your own version of this GitHub project. Localization code is found in main.c, within the_ *handle_tick() function. Uncomment and edit your own labels.*
+_**Nerd summary:** Compile your own version of this GitHub project. Localization code is found in main.c, within the_ *handle_tick() function. Uncomment and edit your own labels. Note that only ISO Basic Latin characters are supported.*
 
 1. Log in to http://cloudpebble.net
 
@@ -101,7 +101,7 @@ _**Nerd summary:** Compile your own version of this GitHub project. Localization
 
 7. Scroll down until you see the text "LOCALIZATION CODE BEGIN". Remove this line. Also remove the line further down where you can see the text "LOCALIZATION CODE END". Once you have done this the localization code is activated and you can start editing it.
 
-8. Replace **XXX** for each weekday with the label of your choice (make sure to leave the quotation marks and to make the label no more and no less than 3 characters long)
+8. Replace **XXX** for each weekday with the label of your choice. Make sure to leave the quotation marks and to make the label no more and no less than 3 characters long. Supported characters are A-Z, a-z and 0-9.
 
 9. When you are done editing, click "Save" in the lower right corner
 
