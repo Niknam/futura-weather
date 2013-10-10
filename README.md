@@ -1,8 +1,7 @@
 Futura Weather 2
 ==============
 
-Modification of "Roboto Weather" by Martin Rosinski.
-http://www.mypebblefaces.com/apps/3601/3408/
+Modification of "Roboto Weather" by Martin Rosinski. http://www.mypebblefaces.com/apps/3601/3408/
 
 ![](https://dl.dropboxusercontent.com/u/572608/futura-weather-v2/futura_weather-v2.jpg)
 
@@ -10,15 +9,18 @@ http://www.mypebblefaces.com/apps/3601/3408/
 
 [Celsius](http://www.mypebblefaces.com/download_app?cID=2905&fID=3735&version=2&uID=3263) [[QR]](http://www.mypebblefaces.com/QR/temp/pebble711ab886558fe228fc3ccdf035abfdd7.png)
 
-[Celsius (no vibration alert)](http://www.mypebblefaces.com/download_app?cID=3822&fID=3777&version=2&uID=3263) [[QR]](http://www.mypebblefaces.com/QR/temp/pebble7bc9d76276085491cae3f671c95a582d.png)
+[Celsius (no vibration alert)](http://www.mypebblefaces.com/download_app?cID=3822&fID=3777&version=2&uID=3263) [[QR] *](http://www.mypebblefaces.com/QR/temp/pebble7bc9d76276085491cae3f671c95a582d.png)
 
-[Celsius (no phone link monitor)](http://www.mypebblefaces.com/download_app?cID=5759&fID=6608&version=2&uID=3263) [[QR]](http://www.mypebblefaces.com/QR/temp/pebble696384727ee254ddeea08b609335bbde.png)
+[Celsius (no phone link monitor)](http://www.mypebblefaces.com/download_app?cID=5759&fID=6608&version=2&uID=3263) [[QR] **](http://www.mypebblefaces.com/QR/temp/pebble696384727ee254ddeea08b609335bbde.png)
 
 [Fahrenheit](http://www.mypebblefaces.com/download_app?cID=5760&fID=6609&version=2&uID=3263) [[QR]](http://www.mypebblefaces.com/QR/temp/pebbled5b6df371fc71ce5cae91741716deb23.png)
 
-[Fahrenheit (no vibration alert)](http://www.mypebblefaces.com/download_app?cID=5761&fID=6610&version=2&uID=3263) [[QR]](http://www.mypebblefaces.com/QR/temp/pebble4933fe7a41ca893b6572ea70f8230450.png)
+[Fahrenheit (no vibration alert)](http://www.mypebblefaces.com/download_app?cID=5761&fID=6610&version=2&uID=3263) [[QR] *](http://www.mypebblefaces.com/QR/temp/pebble4933fe7a41ca893b6572ea70f8230450.png)
 
-[Fahrenheit (no phone link monitor)](http://www.mypebblefaces.com/download_app?cID=5762&fID=6611&version=2&uID=3263) [[QR]](http://www.mypebblefaces.com/QR/temp/pebble7a6129f628e47686b60b80149f3f0610.png)
+[Fahrenheit (no phone link monitor)](http://www.mypebblefaces.com/download_app?cID=5762&fID=6611&version=2&uID=3263) [[QR] **](http://www.mypebblefaces.com/QR/temp/pebble7a6129f628e47686b60b80149f3f0610.png)
+
+_* Does not vibrate upon phone disconnections, and pings the phone less frequently._
+_** Does not monitor the link between watch and phone (i.e. does not ping the phone at all)._
 
 Features
 --------
@@ -44,14 +46,14 @@ https://itunes.apple.com/app/httpebble/id650174711?l=en&mt=8
 Error Feedback
 --------------
 
-### Stale weather information
+### Stale Weather Information
 ![](https://dl.dropboxusercontent.com/u/572608/futura-weather-v2/futura-weather-stale-indication.png)
 
 The degree symbol will disappear if no successful weather request has been made during the previous 60 minutes, to indicate that the weather information is stale. Most often, this would also indicate that your Internet connection is offline.
 
 The watch will try to reconnect during the subsequent 3 hours following the initial error, and thereafter become passive. At this point you will have to reload the watch face manually in order for it to send weather requests again.
 
-### Phone/httpebble app disconnections
+### Phone/httpebble App Disconnections
 ![](https://dl.dropboxusercontent.com/u/572608/futura-weather-v2/futura-weather-phone-disconnection.png)
 
 The watch regularly pings the phone to check whether it is still connected or not. Upon noticing that the phone is disconnected from the watch, the phone disconnection icon above will be displayed. 30 minutes after the disconnection, the temperature field will be blanked out. The same feedback will be displayed if the httpebble app is disconnected from the watch, or if loading the watch face while being disconnected from the phone or the httpebble app.
