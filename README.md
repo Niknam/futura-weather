@@ -103,11 +103,13 @@ _**Nerd summary:** Compile your own version of this GitHub project. Localization
 
 8. Replace **XXX** for each weekday with the label of your choice. Make sure to leave the quotation marks and to make the label no more and no less than 3 characters long. Supported characters are A-Z, a-z and 0-9.
 
-9. When you are done editing, click "Save" in the lower right corner
+9. If your labels consist of 2 characters and 1 space, e.g. "Mo ", make sure to _uncomment_ (i.e. remove the 2 initial slash symbols) this line of code, just below the code for your 'Sunday' label: **memmove(&date_text[3], &date_text[4], sizeof(date_text) - 1);**
 
-10. Click "Compilation" in the left-hand side menu, and then "Run build"
+10. When you are done editing, click "Save" in the lower right corner
 
-11. CloudPebble will thereafter generate a QR code. Either scan this with a code scanner on your mobile device, or click the "pbw" link to download the watch face file to your computer. Move this file to your Dropbox folder, or similar, to be able to access it from your mobile device and thereafter install it on your Pebble watch.
+11. Click "Compilation" in the left-hand side menu, and then "Run build"
+
+12. CloudPebble will thereafter generate a QR code. Either scan this with a code scanner on your mobile device, or click the "pbw" link to download the watch face file to your computer. Move this file to your Dropbox folder, or similar, to be able to access it from your mobile device and thereafter install it on your Pebble watch.
 
 
 Version History

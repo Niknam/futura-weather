@@ -227,44 +227,40 @@ void handle_tick(AppContextRef ctx, PebbleTickEvent *t)
 			if (date_text[0] == 'M')
 			{
 				memcpy(&date_text, "XXX", 3); // Monday
-				memmove(&date_text[3], &date_text[4], sizeof(date_text) - 1);
 			}
 			
 			if (date_text[0] == 'T' && date_text[1] == 'u')
 			{
 				memcpy(&date_text, "XXX", 3); // Tuesday
-				memmove(&date_text[3], &date_text[4], sizeof(date_text) - 1);
 			}
 			
 			if (date_text[0] == 'W')
 			{
 				memcpy(&date_text, "XXX", 3); // Wednesday
-				memmove(&date_text[3], &date_text[4], sizeof(date_text) - 1);
 			}
 			
 			if (date_text[0] == 'T' && date_text[1] == 'h')
 			{
 				memcpy(&date_text, "XXX", 3); // Thursday
-				memmove(&date_text[3], &date_text[4], sizeof(date_text) - 1);
 			}
 			
 			if (date_text[0] == 'F')
 			{
 				memcpy(&date_text, "XXX", 3); // Friday
-				memmove(&date_text[3], &date_text[4], sizeof(date_text) - 1);
 			}
 			
 			if (date_text[0] == 'S' && date_text[1] == 'a')
 			{
 				memcpy(&date_text, "XXX", 3); // Saturday
-				memmove(&date_text[3], &date_text[4], sizeof(date_text) - 1);
 			}
 			
 			if (date_text[0] == 'S' && date_text[1] == 'u')
 			{
 				memcpy(&date_text, "XXX", 3); // Sunday
-				memmove(&date_text[3], &date_text[4], sizeof(date_text) - 1);
 			}
+			
+			// Uncomment the line below if your labels consist of 2 characters and 1 space, e.g. "Mo "
+			//memmove(&date_text[3], &date_text[4], sizeof(date_text) - 1);
 			
 			*** LOCALIZATION CODE END ***/
 			
