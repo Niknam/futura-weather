@@ -435,7 +435,7 @@ void request_weather() {
 	}
 	// Build the HTTP request
 	DictionaryIterator *body;
-	HTTPResult result = http_out_get("http://endpointurl", WEATHER_HTTP_COOKIE, &body);
+	HTTPResult result = http_out_get("https://ofkorth.net/pebble/weather2", WEATHER_HTTP_COOKIE, &body);
 	
 	if(result != HTTP_OK) {		
 		
