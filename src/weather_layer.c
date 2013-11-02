@@ -69,7 +69,7 @@ void weather_layer_set_temperature(WeatherLayer* weather_layer, int16_t t, bool 
 	memcpy(weather_layer->temp_str, itoa(t), 4);
 	int degree_pos = strlen(weather_layer->temp_str);
 	
-	// Temperature between 0-9° or 20°-99°
+	// Temperature between -9°-9° or 20°-99°
 	if (strlen(weather_layer->temp_str) == 1 || 
 		(strlen(weather_layer->temp_str) == 2 && weather_layer->temp_str[0] != '1')) {
 	  text_layer_set_font(&weather_layer->temp_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FUTURA_40)));
@@ -80,6 +80,16 @@ void weather_layer_set_temperature(WeatherLayer* weather_layer, int16_t t, bool 
 	  }
 	  else {
 		memcpy(&weather_layer->temp_str[degree_pos], " ", 3);
+	  }
+		
+	  // Is the temperature below zero?
+	  if (weather_layer->temp_str[0] == '-') {
+		memmove(
+          weather_layer->temp_str + 1 + 1,
+          weather_layer->temp_str + 1,
+          5 - (1 + 1)
+        );
+		memcpy(&weather_layer->temp_str[1], " ", 1);
 	  }
 	} 
 	
@@ -109,6 +119,16 @@ void weather_layer_set_temperature(WeatherLayer* weather_layer, int16_t t, bool 
 	  }
 	  else {
 		memcpy(&weather_layer->temp_str[degree_pos], " ", 3);
+	  }
+		
+	  // Is the temperature below zero?
+	  if (weather_layer->temp_str[0] == '-') {
+		memmove(
+          weather_layer->temp_str + 1 + 1,
+          weather_layer->temp_str + 1,
+          5 - (1 + 1)
+        );
+		memcpy(&weather_layer->temp_str[1], " ", 1);
 	  }
 	}
 	

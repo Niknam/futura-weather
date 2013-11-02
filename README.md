@@ -7,17 +7,17 @@ Modification of "Roboto Weather" by Martin Rosinski. http://www.mypebblefaces.co
 
 **Download here:**
 
-[Celsius](http://www.mypebblefaces.com/download_app?cID=2905&fID=3735&version=2&uID=3263) [[QR]](http://www.mypebblefaces.com/QR/temp/pebble711ab886558fe228fc3ccdf035abfdd7.png)
+[Celsius](http://www.mypebblefaces.com/download_app?cID=2905&fID=3735&version=2&uID=3263) [[QR](http://www.mypebblefaces.com/QR/temp/pebble711ab886558fe228fc3ccdf035abfdd7.png)]
 
-[Celsius (no vibration alert)](http://www.mypebblefaces.com/download_app?cID=3822&fID=3777&version=2&uID=3263) [[QR] *](http://www.mypebblefaces.com/QR/temp/pebble7bc9d76276085491cae3f671c95a582d.png)
+[Celsius (no vibration alert)](http://www.mypebblefaces.com/download_app?cID=3822&fID=3777&version=2&uID=3263) [[QR](http://www.mypebblefaces.com/QR/temp/pebble7bc9d76276085491cae3f671c95a582d.png)] *
 
-[Celsius (no phone link monitor)](http://www.mypebblefaces.com/download_app?cID=5759&fID=6608&version=2&uID=3263) [[QR] **](http://www.mypebblefaces.com/QR/temp/pebble696384727ee254ddeea08b609335bbde.png)
+[Celsius (no phone link monitor)](http://www.mypebblefaces.com/download_app?cID=5759&fID=6608&version=2&uID=3263) [[QR](http://www.mypebblefaces.com/QR/temp/pebble696384727ee254ddeea08b609335bbde.png)] **
 
-[Fahrenheit](http://www.mypebblefaces.com/download_app?cID=5760&fID=6609&version=2&uID=3263) [[QR]](http://www.mypebblefaces.com/QR/temp/pebbled5b6df371fc71ce5cae91741716deb23.png)
+[Fahrenheit](http://www.mypebblefaces.com/download_app?cID=5760&fID=6609&version=2&uID=3263) [[QR](http://www.mypebblefaces.com/QR/temp/pebbled5b6df371fc71ce5cae91741716deb23.png)]
 
-[Fahrenheit (no vibration alert)](http://www.mypebblefaces.com/download_app?cID=5761&fID=6610&version=2&uID=3263) [[QR] *](http://www.mypebblefaces.com/QR/temp/pebble4933fe7a41ca893b6572ea70f8230450.png)
+[Fahrenheit (no vibration alert)](http://www.mypebblefaces.com/download_app?cID=5761&fID=6610&version=2&uID=3263) [[QR](http://www.mypebblefaces.com/QR/temp/pebble4933fe7a41ca893b6572ea70f8230450.png)] *
 
-[Fahrenheit (no phone link monitor)](http://www.mypebblefaces.com/download_app?cID=5762&fID=6611&version=2&uID=3263) [[QR] **](http://www.mypebblefaces.com/QR/temp/pebble7a6129f628e47686b60b80149f3f0610.png)
+[Fahrenheit (no phone link monitor)](http://www.mypebblefaces.com/download_app?cID=5762&fID=6611&version=2&uID=3263) [[QR](http://www.mypebblefaces.com/QR/temp/pebble7a6129f628e47686b60b80149f3f0610.png)] **
 
 _* Does not vibrate upon phone disconnections, and pings the phone less frequently._
 
@@ -103,7 +103,7 @@ _**Nerd summary:** Compile your own version of this GitHub project. Localization
 
 8. Replace **XXX** for each weekday with the label of your choice. Make sure to leave the quotation marks and to make the label no more and no less than 3 characters long. Supported characters are A-Z, a-z and 0-9.
 
-9. If your labels consist of 2 characters and 1 space, e.g. "Mo ", make sure to _uncomment_ (i.e. remove the 2 initial slash symbols) this line of code, just below the code for your 'Sunday' label: **memmove(&date_text[3], &date_text[4], sizeof(date_text) - 1);**
+9. If your labels consist of 2 characters and 1 space, e.g. "Mo ", make sure to _uncomment_ this line of code (i.e. remove the 2 initial slash symbols), just below the code for your 'Sunday' label: **memmove(&date_text[3], &date_text[4], sizeof(date_text) - 1);**
 
 10. When you are done editing, click "Save" in the lower right corner
 
@@ -114,6 +114,9 @@ _**Nerd summary:** Compile your own version of this GitHub project. Localization
 
 Version History
 ---------------
+
+#### 2.0.1 (November 2, 2013)
+- Small fix to make temperature more readable at subzero temperatures (adds a space between minus sign and temperature value)
 
 #### 2.0 (October 8, 2013)
 - New weather icons, courtesy of Onlyoly (http://drbl.in/hozN)
