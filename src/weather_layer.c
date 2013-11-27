@@ -39,10 +39,9 @@ void weather_layer_init(WeatherLayer* weather_layer, GPoint pos) {
 	layer_add_child(&weather_layer->layer, &weather_layer->temp_layer_background.layer);
 	
     // Add temperature layer
-	text_layer_init(&weather_layer->temp_layer, GRect(70, 19, 72, 80));
+	text_layer_init(&weather_layer->temp_layer, GRect(70, 20, 72, 80));
 	text_layer_set_background_color(&weather_layer->temp_layer, GColorClear);
 	text_layer_set_text_alignment(&weather_layer->temp_layer, GTextAlignmentCenter);
-	text_layer_set_font(&weather_layer->temp_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FUTURA_40)));
 	layer_add_child(&weather_layer->layer, &weather_layer->temp_layer.layer);
 	
 	// Note absence of icon layer
@@ -72,8 +71,7 @@ void weather_layer_set_temperature(WeatherLayer* weather_layer, int16_t t, bool 
 	// Temperature between -9°-9° or 20°-99°
 	if (strlen(weather_layer->temp_str) == 1 || 
 		(strlen(weather_layer->temp_str) == 2 && weather_layer->temp_str[0] != '1')) {
-	  text_layer_set_font(&weather_layer->temp_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FUTURA_40)));
-	  text_layer_set_text_alignment(&weather_layer->temp_layer, GTextAlignmentCenter);
+	  text_layer_set_font(&weather_layer->temp_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FUTURA_38)));
 	  // Add degree symbol. If temperature is stale, add blank space instead.
 	  if (!is_stale) {
 	    memcpy(&weather_layer->temp_str[degree_pos], "°", 3);
@@ -83,7 +81,7 @@ void weather_layer_set_temperature(WeatherLayer* weather_layer, int16_t t, bool 
 	  }
 		
 	  // Is the temperature below zero?
-	  if (weather_layer->temp_str[0] == '-') {
+	  if (weather_layer->temp_str[0] == '-' && weather_layer->temp_str[1] != '1') {
 		memmove(
           weather_layer->temp_str + 1 + 1,
           weather_layer->temp_str + 1,
@@ -95,40 +93,31 @@ void weather_layer_set_temperature(WeatherLayer* weather_layer, int16_t t, bool 
 	
 	// Temperature between 10°-19°
 	else if (strlen(weather_layer->temp_str) == 2 && weather_layer->temp_str[0] == '1') {
-	  text_layer_set_font(&weather_layer->temp_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FUTURA_40)));
-	  // Move temperature slightly to the left
-	  text_layer_set_text_alignment(&weather_layer->temp_layer, GTextAlignmentLeft);
+	  text_layer_set_font(&weather_layer->temp_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FUTURA_38)));
 	  // Add degree symbol. If temperature is stale, add blank space instead.
 	  if (!is_stale) {
 	  	memcpy(&weather_layer->temp_str[degree_pos], "°", 3);
 	  }
 	  else {
-		text_layer_set_text_alignment(&weather_layer->temp_layer, GTextAlignmentCenter);
 		memcpy(&weather_layer->temp_str[degree_pos], " ", 3);
 	  }
 	} 
 	
 	// Temperature above 99° or below -9°
 	else if (strlen(weather_layer->temp_str) > 2) { 
-	  // Shrink font size
-	  text_layer_set_font(&weather_layer->temp_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FUTURA_35)));
-	  text_layer_set_text_alignment(&weather_layer->temp_layer, GTextAlignmentCenter);
+	  if (weather_layer->temp_str[0] == '-') {
+	    text_layer_set_font(&weather_layer->temp_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FUTURA_38)));
+	  }
+	  // Shrink font size if temeperature has three digits
+	  else {
+	    text_layer_set_font(&weather_layer->temp_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FUTURA_35)));
+	  }
 	  // Add degree symbol. If temperature is stale, add blank space instead.
 	  if (!is_stale) {
 	    memcpy(&weather_layer->temp_str[degree_pos], "°", 3);
 	  }
 	  else {
 		memcpy(&weather_layer->temp_str[degree_pos], " ", 3);
-	  }
-		
-	  // Is the temperature below zero?
-	  if (weather_layer->temp_str[0] == '-') {
-		memmove(
-          weather_layer->temp_str + 1 + 1,
-          weather_layer->temp_str + 1,
-          5 - (1 + 1)
-        );
-		memcpy(&weather_layer->temp_str[1], " ", 1);
 	  }
 	}
 	
