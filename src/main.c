@@ -145,8 +145,13 @@ void success(int32_t cookie, int http_status, DictionaryIterator* received, void
 	Tuple* icon_tuple = dict_find(received, WEATHER_KEY_ICON);
 	if(icon_tuple) {
 		int icon = icon_tuple->value->int8;
-		if(icon >= 0 && icon < 18 && icon != 17) {
-			weather_layer_set_icon(&weather_layer, icon);
+		if(icon >= 0 && icon < 18) {
+			if (!has_temperature && icon == 17) {
+				weather_layer_set_icon(&weather_layer, icon);
+			}
+			else if (icon != 17) {
+				weather_layer_set_icon(&weather_layer, icon);
+			}
 		}
 	}
 	Tuple* temperature_tuple = dict_find(received, WEATHER_KEY_TEMPERATURE);
