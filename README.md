@@ -115,6 +115,10 @@ _**Nerd summary:** Compile your own version of this GitHub project. Localization
 Version History
 ---------------
 
+#### 2.0.2 (November 27, 2013)
+- Fixes the issue of the temperature text not being displayed at temperatures of -10° and below
+- Size of weather icon and temperature text slightly decreased to make weather layer less crowded
+
 #### 2.0.1 (November 2, 2013)
 - Small fix to make temperature more readable at subzero temperatures (adds a space between minus sign and temperature value)
 
