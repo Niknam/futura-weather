@@ -61,10 +61,10 @@ The watch regularly pings the phone to check whether it is still connected or no
 
 As when noticing HTTP errors, the watch will try to reconnect during the subsequent 3 hours following phone disconnections. Likewise, it will become passive thereafter and the watch face has to be manually reloaded in order to be able to check for connected phones again.
 
-### No Internet Connection
+### HTTP Error
 ![](https://dl.dropboxusercontent.com/u/572608/futura-weather-v2/futura-weather-2-clouderror.png)
 
-If loading the watch face while your phone's Internet connection is offline, the above icon will be displayed. The same icon will be displayed if recovering from a phone disconnection while having no Internet connection.
+If loading the watch face while your phone's Internet connection is offline, or if the watch has problems connecting to the weather information provider, the above icon will be displayed. The same icon will be displayed if recovering from a phone disconnection while having no Internet connection.
 
 ### Loading Animation
 ![](https://dl.dropboxusercontent.com/u/572608/futura-weather-v2/futura-weather-loading.png)
