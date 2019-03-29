@@ -1,9 +1,9 @@
 Futura Weather 2
 ==============
 
-Modification of "Roboto Weather" by Martin Rosinski. http://www.mypebblefaces.com/apps/3601/3408/
+![](https://previews.dropbox.com/p/thumb/AAaJIdtC_KpCmlNpDy_8C9HYAcVlNbNF8cGdQkOyMFdTBiKfLmm8CAPs9NZgKDOhi6SnNHQZ6CuvTLig_32LH0wHIxIRUCkycR7xW7uOjTDJ1Yx3j2NcJuL7lj_kg5mtau0roPH6DYU7H8DHOh_ObCNnfKXtZyOjjBpLoL-My3DvYnO3rbF0xMR1CVxLUCZgI2NC-ui1Meb7hVqu1HwPztlwSDSvbv6f25kXn65YBnugpknfS_CJzYjMgWictaFfX0thqD_SmeNUJNrvanq13N8bzJZM3YHtAy4UXoWIEU36vcpZBDHGZE1Sbk3-wdYkSFci3UuiEwMvrqPGR00dFZuB/p.png?size_mode=5)
 
-![](https://dl.dropboxusercontent.com/u/572608/futura-weather-v2/futura_weather-v2.jpg)
+Modification of "Roboto Weather" by Martin Rosinski. http://www.mypebblefaces.com/apps/3601/3408/
 
 **Download here:**
 
