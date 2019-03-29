@@ -1,7 +1,7 @@
 Futura Weather 2
 ==============
 
-![](https://www.dropbox.com/s/wxa7umhmky7mumc/futuraweather-steel.png?dl=1)
+![](https://www.dropbox.com/s/wxa7umhmky7mumc/futuraweather-steel.png)
 
 Modification of "Roboto Weather" by Martin Rosinski. http://www.mypebblefaces.com/apps/3601/3408/
 
