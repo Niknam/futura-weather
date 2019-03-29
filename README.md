@@ -1,7 +1,7 @@
+![](https://i.imgur.com/HrcKxrP.jpg)
+
 Futura Weather 2
 ==============
-
-![](https://cdn1.imggmi.com/uploads/2019/3/29/50b0beb9361dba2838ea942a267cd3ef-full.jpg)
 
 Modification of "Roboto Weather" by Martin Rosinski. http://www.mypebblefaces.com/apps/3601/3408/
 
@@ -48,26 +48,26 @@ Error Feedback
 --------------
 
 ### Stale Weather Information
-![](https://dl.dropboxusercontent.com/u/572608/futura-weather-v2/futura-weather-stale-indication.png)
+![](https://i.imgur.com/sv2zAew.png)
 
 The degree symbol will disappear if no successful weather request has been made during the previous 60 minutes, to indicate that the weather information is stale. Most often, this would also indicate that your Internet connection is offline.
 
 The watch will try to reconnect during the subsequent 3 hours following the initial error, and thereafter become passive. At this point you will have to reload the watch face manually in order for it to send weather requests again.
 
 ### Phone/httpebble App Disconnections
-![](https://dl.dropboxusercontent.com/u/572608/futura-weather-v2/futura-weather-phone-disconnection.png)
+![](https://i.imgur.com/JQeuNOo.png)
 
 The watch regularly pings the phone to check whether it is still connected or not. Upon noticing that the phone is disconnected from the watch, the phone disconnection icon above will be displayed. 30 minutes after the disconnection, the temperature field will be blanked out. The same feedback will be displayed if the httpebble app is disconnected from the watch, or if loading the watch face while being disconnected from the phone or the httpebble app.
 
 As when noticing HTTP errors, the watch will try to reconnect during the subsequent 3 hours following phone disconnections. Likewise, it will become passive thereafter and the watch face has to be manually reloaded in order to be able to check for connected phones again.
 
 ### HTTP Error
-![](https://dl.dropboxusercontent.com/u/572608/futura-weather-v2/futura-weather-2-clouderror.png)
+![](https://i.imgur.com/Cct7huv.png)
 
 If loading the watch face while your phone's Internet connection is offline, or if the watch has problems connecting to the weather information provider, the above icon will be displayed. The same icon will be displayed if recovering from a phone disconnection while having no Internet connection.
 
 ### Loading Animation
-![](https://dl.dropboxusercontent.com/u/572608/futura-weather-v2/futura-weather-loading.png)
+![](https://i.imgur.com/rgvUx8U.png)
 
 Upon loading the watch face, the watch will instantly try to fetch updated weather. However, if experiencing delays of some sort, the watch will wait until the next consecutive minute to try again. To indicate that the watch face is still loading, a loading animation will appear 4 seconds after loading the watch face, if no successful weather request has been made until then.
 
@@ -78,7 +78,7 @@ All icons (except "Hot" and "Cold") courtesy of **Onlyoly** (http://drbl.in/hozN
 
 "Hot" and "Cold" icons courtesy of **Dmitry Baranovskiy** (http://thenounproject.com/DmitryBaranovskiy) and used under a Creative Commons Attribution license (CC BY 3.0).
 
-![](https://dl.dropboxusercontent.com/u/572608/futura-weather-v2/weather-condition-icons.png)
+![](https://i.imgur.com/d5dILGK.png)
 
 Localization Notes
 ------------------
